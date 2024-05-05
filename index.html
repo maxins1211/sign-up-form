@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Sign-up Form</title>
+    <script defer src="./scripts.js"></script>
+  </head>
+  <body class="bg-lightGray h-lvh flex items-center">
+    <div class="img-sidebar h-lvh w-1/3 bg-side-image bg-center bg-cover">
+      <div
+        class="logo-section flex justify-center items-center my-72 bg-black bg-opacity-40 z-10"
+      >
+        <img class="w-28 h-40" src="./odin-lined.png" alt="" />
+        <p class="text-white text-4xl">Odin</p>
+      </div>
+    </div>
+    <div class="main-section w-2/3">
+      <p class="content text-3xl max-w-prose font-semibold px-16 mb-20">
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. <br />
+        Sign up <i>now</i> to get started. <br />
+        <br />
+        You <i>know</i> you want to.
+      </p>
+
+      <form class="px-16 py-6 bg-white shadow-lg" id="form" action="">
+        <p class="text-3xl mb-3">Let's do this!</p>
+        <div class="container grid grid-cols-2">
+          <div class="container my-2">
+            <label for="first-name">FIRST NAME</label>
+            <input
+              class="block w-60 border-solid border-2 border-lightGray rounded"
+              type="text"
+              name="first-name"
+              id="first-name"
+            />
+          </div>
+          <div class="container my-2">
+            <label for="">LAST NAME</label>
+            <input
+              class="block w-60 border-solid border-2 border-lightGray rounded"
+              type="text"
+              name="last-name"
+              id="last-name"
+            />
+          </div>
+          <div class="container my-2">
+            <label for="">EMAIL</label>
+            <input
+              class="block w-60 border-solid border-2 border-lightGray rounded"
+              type="email"
+              name="email"
+              id="email"
+            />
+            <p id="email-invalid" class="text-red-500 hidden">
+              * Email is invalid
+            </p>
+          </div>
+          <div class="container my-2">
+            <label for="">PHONE NUMBER</label>
+            <input
+              class="block w-60 border-solid border-2 border-lightGray rounded"
+              type="tel"
+              name="phone-number"
+              id="phone-number"
+            />
+          </div>
+          <div class="container my-2">
+            <label for="">PASSWORD</label>
+            <input
+              class="block w-60 border-solid border-2 border-lightGray rounded"
+              type="password"
+              name="password"
+              id="password"
+            />
+            <p id="password-invalid" class="text-red-500 hidden">
+              * Password do not match
+            </p>
+          </div>
+          <div class="container my-2">
+            <label for="">CONFIRM PASSWORD</label>
+            <input
+              class="block w-60 border-solid border-2 border-lightGray rounded"
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="container px-16">
+        <button
+          id="submit-btn"
+          class="border-solid rounded-lg w-52 bg-armyGreen text-white py-4 my-8"
+        >
+          Create Account
+        </button>
+        <p class="text-xl">
+          Already have an account?
+          <a class="underline text-armyGreen" href="">Log in</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
